@@ -1,0 +1,665 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <style>
+        .china-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.china-mobile .frame {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif
+}
+
+.china-mobile .frame * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.china-mobile .container {
+    /*height: 100%;*/
+/*    min-height: 35%;
+    max-height: 65%;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    padding: 18px 16px 0 16px;
+    word-break: break-all;
+}
+
+.china-mobile [class^="icon-"] {
+    margin-right: 8px;
+    width: 15px;
+    height: 15px
+}
+
+.china-mobile .title {
+    padding-bottom: 19px;
+    color: #0185d0;
+    font-size: 15px
+}
+
+.china-mobile .sub-title {
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: lighter;
+    text-indent: 28px
+}
+
+.china-mobile .common-content {
+    padding-bottom: 24px
+}
+
+.china-mobile .common-content .paragraph {
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 25px;
+    word-break: break-all;
+}
+
+.china-mobile .common-content .paragraph .blue {
+    color: #0185d0
+}
+
+.china-mobile .common-label {
+    padding-bottom: 19px
+}
+
+.china-mobile .common-label .row-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 16px;
+    padding-bottom: 8px
+}
+
+.china-mobile .common-label .row-title .text {
+    color: #8b8b8b;
+    font-weight: lighter
+}
+
+.china-mobile .common-label .row-text {
+    padding-left: 23px;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: lighter
+}
+
+.china-mobile .common-progress {
+    padding-bottom: 24px
+}
+
+.china-mobile .common-progress .progress-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 16px;
+    padding-bottom: 8px
+}
+
+.china-mobile .common-progress .progress-title .text {
+    color: #8b8b8b;
+    font-weight: lighter
+}
+
+.china-mobile .common-progress .detail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.china-mobile .common-progress .detail .progress {
+    position: relative;
+    margin-left: 23px;
+    border: 1px solid #dadada;
+    width: 50%;
+    height: 11px;
+    background: #eff0f5;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center
+}
+
+.china-mobile .common-progress .detail .progress .current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+    background: #aae333;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px
+}
+
+.china-mobile .common-progress .detail .progress .percent {
+    color: #7da22e;
+    font-weight: lighter;
+    line-height: 9px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center
+}
+
+.china-mobile .common-progress .detail .text {
+    color: #5c5c5c;
+    font-size: 11px;
+    line-height: 11px
+}
+
+.china-mobile .single-button {
+    padding: 18px 8px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.china-mobile .single-button .button {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #0185d0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center
+}
+
+.china-mobile .double-button {
+    padding: 18px 8px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.china-mobile .double-button .button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center
+}
+
+.china-mobile .double-button .button:nth-child(1) {
+    color: #0185d0;
+    background: #fff;
+    border: 1px solid #0185d0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px
+}
+
+.china-mobile .double-button .button:nth-child(2) {
+    color: #fff;
+    background: #0185d0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px
+}
+
+.china-mobile .three-button {
+    padding: 18px 8px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.china-mobile .three-button .button {
+    display: block;
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center
+}
+
+.china-mobile .three-button .button:nth-child(1),.china-mobile .three-button .button:nth-child(2) {
+    color: #0185d0;
+    background: #fff;
+    border: 1px solid #0185d0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px
+}
+
+.china-mobile .three-button .button:nth-child(3) {
+    color: #fff;
+    background: #0185d0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px
+}
+
+.china-mobile .title-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 13px;
+    height: 66px;
+    background: url("http://z.10085.cn/admin/uploadpic/2016050604242512.png") center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0
+}
+
+.china-mobile .title-bar .left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%
+}
+
+.china-mobile .title-bar .left .text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter
+}
+
+.china-mobile .title-bar .center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    color: #fff
+}
+
+.china-mobile .title-bar .center .text {
+    font-size: 17px
+}
+
+.china-mobile .title-bar .center .num {
+    font-size: 13px;
+    font-weight: lighter
+}
+
+.china-mobile .title-bar .right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%
+}
+
+.china-mobile .title-bar .right .close {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 13px;
+    height: 13px;
+    background: url("http://z.10085.cn/admin/uploadpic/2016050604242449.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.china-mobile .generalize {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-top: 1px dotted #d8d8d8;
+    background: #f6f6f6;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px
+}
+
+.china-mobile .generalize:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 12px;
+    background: url("http://z.10085.cn/admin/uploadpic/2016013110244712.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.china-mobile .generalize .text {
+    text-indent: 26px;
+    color: #5c5c5c;
+    font-size: 13px
+}
+
+.china-mobile .generalize .text .num {
+    color: #0185d0
+}
+
+.china-mobile .notify-table .table {
+    padding-bottom: 24px
+}
+
+.china-mobile .notify-table .table .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    line-height: 38px
+}
+
+.china-mobile .notify-table .table .row:last-child {
+    border-bottom: 1px solid #e8e8e8
+}
+
+.china-mobile .notify-table .table .column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 9px
+}
+
+.china-mobile .notify-table .table .column:nth-child(1) {
+    width: 40%;
+    border-right: 1px solid #e8e8e8
+}
+
+.china-mobile .notify-table .table .column:nth-child(1) .text {
+    color: #8b8b8b;
+    font-weight: lighter
+}
+
+.china-mobile .notify-table .table .column:nth-child(2) {
+    width: 60%
+}
+
+.china-mobile .notify-table .table .column:nth-child(2) .text {
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: lighter
+}
+
+.china-mobile .menu .gird {
+    padding-bottom: 24px
+}
+
+.china-mobile .menu .gird .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.china-mobile .menu .gird .row:nth-child(2) {
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8
+}
+
+.china-mobile .menu .gird .column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 33.3%;
+    height: 93px
+}
+
+.china-mobile .menu .gird .column:nth-child(2) {
+    border-left: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8
+}
+
+.china-mobile .menu .gird .column .icon {
+    width: 32px;
+    height: 32px
+}
+
+.china-mobile .menu .gird .column .marketing.container {
+    padding: 0 0 18px
+}
+
+.china-mobile .marketing img {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%
+}
+
+.china-mobile .notify-point .star {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10px
+}
+
+.china-mobile .notify-point .star .icon-star {
+    margin-right: 10px
+}
+
+.china-mobile .app-tip {
+    padding: 18px 16px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px
+}
+    </style>
+    <script type="text/javascript">function toggleOrigin() {var origin = document.getElementById('smsOrigin');var content = document.getElementById('smsContent');var viewOrigin = document.getElementById('viewOrigin');var menu = document.getElementById('menuArea');var appTip = document.getElementById('appTipArea');if (viewOrigin.innerHTML == '原文') {origin.hidden = false;content.hidden = true;viewOrigin.innerHTML = '卡片';menu.hidden = true;appTip.hidden = false} else {origin.hidden = true;content.hidden = false;viewOrigin.innerHTML = '原文';menu.hidden = false;appTip.hidden = true}}</script>
+</head>
+
+<body style="margin:0;">
+<div class="china-mobile">
+    <div class="frame">
+        <div class="title-bar">
+            <div class="left">
+                <div class="text" id="viewOrigin" onclick="toggleOrigin()">原文</div>
+            </div>
+            <div class="center">
+                <div class="text">${txt_serverName}</div>
+                <div class="num">${txt_portNumber}</div>
+            </div>
+            <div class="right">
+                <div class="close" onclick="Android.closeCard()"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="smsOrigin" style="font-size:14px;" hidden>${txt_origin}</div>
+            <div id="smsContent">
+                <div class="title">${txt_sceneType}</div>
+                <div class="common-content">
+                    <div class="paragraph">
+                        ${txt_pureSms}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuArea">
+            <div class="single-button">
+                $menuItem$<div class="button" onclick="Android.tapMenu('${txt_address}', '${txt_menuName}', '${txt_openType}', '${txt_openUrl}')">${txt_menuName}</div>#menuItem#
+            </div>
+        </div>
+        <div id="appTipArea" hidden>
+            <div class="app-tip">
+                <div id="tipDetail"><span style="color:#aaaaaa">*该功能由${txt_appName}提供</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.viewApp()">点击查看</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.forbidCard()" id="forbidCard" hidden>禁止弹窗</span></div>
+            </div>
+        </div>
+        <!--<div class="generalize">-->
+        <!--<div class="text">-->
+        <!--亲爱的移动用户，您本月消费金额为<span class="num">316.80</span>元，本月购买任意流量包即可享受双倍积分。-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+</body>
+
+</html>

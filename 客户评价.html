@@ -1,0 +1,208 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="sdk.css" />
+    <script>
+        function toggleOrigin() {
+            var origin = document.getElementById("smsOrigin");
+            var content = document.getElementById("smsContent");
+            var viewOrigin = document.getElementById("viewOrigin");
+            var menu = document.getElementById('menuArea');
+            var appTip = document.getElementById('appTipArea');
+            if (viewOrigin.innerText == "原文") {
+                origin.style.display = "none";
+                content.style.display = "flex";
+                viewOrigin.innerText = "卡片"
+                menu.style.display = "none";
+                appTip.style.display = "flex";
+            } else {
+                origin.style.display = "flex";
+                content.style.display = "none";
+                viewOrigin.innerText = "原文"
+                menu.style.display = "flex";
+                appTip.style.display = "none";
+
+            }
+        };
+    function remark(index){
+      var array = document.getElementsByName('manyi');
+      for(var i = 0; i < array.length; i++){
+        var score = array[i];
+        if (i == index) {
+          score.className='img-manyi-active';
+        } else {
+          score.className='img-manyi';
+        }
+      }
+    };
+    </script>
+</head>
+
+<body style="margin:0;">
+<!-- <div class="modal"></div> -->
+<!-- <div class="china-mobile">
+    <div class="bg"></div>
+</div> -->
+<div class="china-mobile">
+    <div class="container">
+        <div class="watermark">
+          <div class="yinzhang"></div>
+        </div>
+          <header>
+            <button onclick="toggleOrigin()" id="viewOrigin">原文</button>
+            <div class="title">
+                <p>${txt_serverName}</p>
+                <p>${txt_portNumber}</p>
+            </div>
+            <div class="close" onclick="Android.closeCard()"></div>
+         </header>
+         <section id="smsOrigin">
+                 <div>
+                     <p>您好，我是9659号话务员，请您对我的本次服务做出评价</p>
+                 </div>
+                <div class="row-flex">
+                  <div name="manyi" class="img-manyi" onclick="remark(0)">
+                    <div class="img-manyi-pic"></div>
+                    <div>非常满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(1)">
+                    <div class="img-manyi-pic"></div>
+                    <div>满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(2)">
+                    <div class="img-manyi-pic"></div>
+                    <div>态度不满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(3)">
+                    <div class="img-manyi-pic"></div>
+                    <div>结果不满意</div>
+                  </div>
+                </div>
+         </section>
+         <section id="smsContent" style="display: none">
+           <div>
+                <p>${txt_origin}</p>
+           </div>
+         </section>
+          <footer>
+              <div id="menuArea" class="row-flex">
+                  $menuItem$<div class="footer-button" onclick="Android.tapMenu('${txt_address}', '${txt_menuName}', '${txt_openType}', '${txt_openUrl}')" id="dowloadApp">${txt_menuName}</div>#menuItem#
+              </div>
+              <div id="appTipArea" style="display: none">
+                  <div class="app-tip">
+                      <div id="tipDetail"><span style="color:#aaaaaa">*该功能由${txt_appName}提供</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.viewApp()">点击查看</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.forbidCard()" id="forbidCard" hidden>禁止弹窗</span></div>
+                  </div>
+              </div>
+          </footer>
+    </div>
+</div>
+</body>
+
+</html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="sdk.css" />
+    <script>
+        function toggleOrigin() {
+            var origin = document.getElementById("smsOrigin");
+            var content = document.getElementById("smsContent");
+            var viewOrigin = document.getElementById("viewOrigin");
+            var menu = document.getElementById('menuArea');
+            var appTip = document.getElementById('appTipArea');
+            if (viewOrigin.innerText == "原文") {
+                origin.style.display = "none";
+                content.style.display = "flex";
+                viewOrigin.innerText = "卡片"
+                menu.style.display = "none";
+                appTip.style.display = "flex";
+            } else {
+                origin.style.display = "flex";
+                content.style.display = "none";
+                viewOrigin.innerText = "原文"
+                menu.style.display = "flex";
+                appTip.style.display = "none";
+
+            }
+        };
+    function remark(index){
+      var array = document.getElementsByName('manyi');
+      for(var i = 0; i < array.length; i++){
+        var score = array[i];
+        if (i == index) {
+          score.className='img-manyi-active';
+        } else {
+          score.className='img-manyi';
+        }
+      }
+    };
+    </script>
+</head>
+
+<body style="margin:0;">
+<!-- <div class="modal"></div> -->
+<!-- <div class="china-mobile">
+    <div class="bg"></div>
+</div> -->
+<div class="china-mobile">
+    <div class="container">
+        <div class="watermark">
+          <div class="yinzhang"></div>
+        </div>
+          <header>
+            <button onclick="toggleOrigin()" id="viewOrigin">原文</button>
+            <div class="title">
+                <p>${txt_serverName}</p>
+                <p>${txt_portNumber}</p>
+            </div>
+            <div class="close" onclick="Android.closeCard()"></div>
+         </header>
+         <section id="smsOrigin">
+                 <div>
+                     <p>您好，我是9659号话务员，请您对我的本次服务做出评价</p>
+                 </div>
+                <div class="row-flex">
+                  <div name="manyi" class="img-manyi" onclick="remark(0)">
+                    <div class="img-manyi-pic"></div>
+                    <div>非常满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(1)">
+                    <div class="img-manyi-pic"></div>
+                    <div>满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(2)">
+                    <div class="img-manyi-pic"></div>
+                    <div>态度不满意</div>
+                  </div>
+                  <div name="manyi" class="img-manyi" onclick="remark(3)">
+                    <div class="img-manyi-pic"></div>
+                    <div>结果不满意</div>
+                  </div>
+                </div>
+         </section>
+         <section id="smsContent" style="display: none">
+           <div>
+                <p>${txt_origin}</p>
+           </div>
+         </section>
+          <footer>
+              <div id="menuArea" class="row-flex">
+                  $menuItem$<div class="footer-button" onclick="Android.tapMenu('${txt_address}', '${txt_menuName}', '${txt_openType}', '${txt_openUrl}')" id="dowloadApp">${txt_menuName}</div>#menuItem#
+              </div>
+              <div id="appTipArea" style="display: none">
+                  <div class="app-tip">
+                      <div id="tipDetail"><span style="color:#aaaaaa">*该功能由${txt_appName}提供</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.viewApp()">点击查看</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0185d0" onclick="Android.forbidCard()" id="forbidCard" hidden>禁止弹窗</span></div>
+                  </div>
+              </div>
+          </footer>
+    </div>
+</div>
+</body>
+
+</html>
